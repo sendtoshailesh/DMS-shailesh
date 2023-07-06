@@ -1,0 +1,69 @@
+Connection Name (if there)	Oracle Source
+Type	SID
+Server Name	< SourceOracleEndpoint >
+Server Port	1521
+Oracle SID	ORACLEDB
+User Name	dbmaster
+Password	See Cloudformation Output tab & DMSDBSecretP or look it up in AWS Secrets Manager for Oracle
+Use SSL	Unchecked
+Store Password	Checked
+Oracle Driver Path	C:\Users\Administrator\Desktop\DMS Workshop\JDBC\ojdbc8.jar
+
+
+786jHZHiO4c)fjuQ)E!3d;At?lymYhcG
+786jHZHiO4c)fjuQ)E!3d;At?lymYhcG
+
+
+AKIAUVCTFD4VP3VJR4MU
+
+L3kJ5cUa4fkZKDHQspCNlLBK5Gv3iexZfPQQMcCg
+
+
+
+data collector
+user1
+Gudiya/29
+
+
+Endpoint
+mod-fb4b31637a564088-sourceoracledb.ch3isrncqv3m.us-east-1.rds.amazonaws.com
+Port
+1521
+
+mod-fb4b31637a564088-aurorapostgresqlcluster-nn8lioqnenb8.cluster-ch3isrncqv3m.us-east-1.rds.amazonaws.com
+5432
+
+
+Target Database Engine	Amazon Aurora (PostgreSQL compatible)
+Connection Name (if there)	Postgresql Target
+Server Name	< TargetAuroraPostgreSQLEndpoint >
+Server Port	5432
+Database Name	AuroraDB
+User Name	dbmaster
+Password	See Cloudformation Output tab & DMSDBSecretP or look it up in AWS Secrets Manager for Postgresql
+Use SSL	Unchecked
+Store Password	Checked
+Amazon Aurora Driver Path	C:\Users\Administrator\Desktop\DMS Workshop\JDBC\postgresql-42.2.9.jar
+
+
+ORA-29257: host (address=(protocol=tcp)(host=10.20.1.194)(port=1521)) unknown ORA-06512: at "SYS.UTL_INADDR", line 19 ORA-06512: at "SYS.UTL_INADDR", line 40 ORA-06512: at line 1
+
+Role arn:aws:iam::320149462826:role/DMS2Secret should have the DMS Regional Service Principal 'dms.us-east-1.amazonaws.com' as trusted entity
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": [
+                    "dms.amazonaws.com",
+                    "dms.us-east-1.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+
