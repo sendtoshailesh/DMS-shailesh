@@ -12,7 +12,7 @@ how to allow remote connection on postgresql
 
 https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection
 
-
+sudo amazon-linux-extras install postgresql10
 
 [ec2-user@ip-172-31-1-99 ~]$ sudo dnf update
 Last metadata expiration check: 0:10:45 ago on Fri Nov 17 09:47:47 2023.
