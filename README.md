@@ -3,6 +3,8 @@ For the full blog post part 1, visit [AWS Database Blog](https://aws.amazon.com/
 For the full blog post part 2, visit [AWS Database Blog](https://aws.amazon.com/blogs/database/cost-optimize-database-migrations-with-aws-dms-part-2/)
 
 -------------------------------------------
+DMS Monitoring setup --> [Step by Step](https://www.linkedin.com/posts/shaileshmishra1_awsdatabasemigration-continuousreplication-activity-7237005834885509120-Wnc-)
+-------------------------------------------
 
 # AWS Database Migration Service (DMS) Resources
 
